@@ -201,3 +201,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
         ro.product.locale.language \
         ro.product.locale.region
+
+# Prebuilt
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,${LOCAL_PATH}/prebuilt/system,system)
